@@ -20,9 +20,11 @@ Or grab the [source](https://github.com/joemaddalone/recycle/dist/recycle.js) ([
 
 Basic usage is as follows:
 
-    recycle(array);
-
-For advanced usage, see the documentation.
+	var arr = ['a','b']
+    recycle(array) // a;
+    recycle(array) // b;
+    recycle(array) // a;
+    recycle(array) // b;
 
 ## License
 
