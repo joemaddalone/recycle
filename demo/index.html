@@ -5,18 +5,12 @@
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/main.css" />
     <style>
-      /* begin demo embedded styles */
-
-      /* end demo embedded styles */
+      body{margin:15px;}
     </style>
   </head>
   <body>
     <h1>recycle demo</h1>
-
-    <!-- begin demo markup -->
-
-    <!-- end demo markup -->
-
+    <div id="results"></div>
     <p>See the <a href="http://joemaddalone.github.io/recycle">project homepage</a>.
     <p>Check out the <a href="https://github.com/joemaddalone/recycle">project repo</a>.
     <p>Copyright 2013 Joe Maddalone</p>
@@ -24,12 +18,11 @@
     <script src="./../dist/recycle.js"></script>
 
     <script>
-      /* begin demo script */
-
-      var n = recycle();
-      console.log(n);
-
-      /* end demo script */
+      var x= ['a','b','c'];
+      var r = document.getElementById('results')
+      for (i=0;i<6;i++){
+        r.innerHTML += "<p>" + recycle(x)  + "</p>";
+      }
     </script>
   </body>
 </html>

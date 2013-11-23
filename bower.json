@@ -1,7 +1,15 @@
 {
   "name": "recycle",
   "version": "0.0.1",
+  "homepage": "https://github.com/joemaddalone/recycle",
+  "authors": ["Joe Maddalone <joe@insert-title.com>"],
   "main": "dist/recycle.min.js",
+  "description": "Recycles array iteration by returning to the zero element as needed",
+  "keywords": [
+    "array",
+    "looping"
+  ],
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
