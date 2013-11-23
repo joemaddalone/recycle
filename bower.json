@@ -1,0 +1,12 @@
+{
+  "name": "recycle",
+  "version": "0.0.1",
+  "main": "dist/recycle.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {}
+}
