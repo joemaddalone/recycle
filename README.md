@@ -14,17 +14,17 @@ Using Bower:
 
     bower install recycle
 
-Or grab the [source](https://github.com/joemaddalone/recycle/dist/recycle.js) ([minified](https://github.com/joemaddalone/recycle/dist/recycle.min.js)).
+Or grab the [source](https://github.com/joemaddalone/recycle/blob/master/dist/recycle.js) ([minified](https://github.com/joemaddalone/recycle/blob/master/dist/recycle.min.js)).
 
 ## Usage
 
 Basic usage is as follows:
 
 	var arr = ['a','b']
-    recycle(array) // a;
-    recycle(array) // b;
-    recycle(array) // a;
-    recycle(array) // b;
+    recycle(arr) // a;
+    recycle(arr) // b;
+    recycle(arr) // a;
+    recycle(arr) // b;
 
 ## License
 
