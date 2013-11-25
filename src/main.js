@@ -1,6 +1,4 @@
 /* recycle main */
-
-// Base function.
 var recycle = function(arr,ret) {
 	if (arr instanceof Array) {
 		arr.index = arr.index || 0;
@@ -14,9 +12,5 @@ var recycle = function(arr,ret) {
 	}
 };
 
-// Version.
 recycle.VERSION = '0.0.1';
-
-
-// Export to the root, which is probably `window`.
 root.recycle = recycle;

@@ -4,8 +4,6 @@
 
 
 /* recycle main */
-
-// Base function.
 var recycle = function(arr,ret) {
 	if (arr instanceof Array) {
 		arr.index = arr.index || 0;
@@ -19,12 +17,25 @@ var recycle = function(arr,ret) {
 	}
 };
 
-// Version.
 recycle.VERSION = '0.0.1';
-
-
-// Export to the root, which is probably `window`.
 root.recycle = recycle;
 
+    /**
+     * Expose recycle
+     */
+    // AMD suppport
+    if (typeof root.define === 'function' && root.define.amd !== undefined) {
+        root.define('recycle', [], function () {
+            return recycle;
+        });
+
+    // CommonJS suppport
+    } else if (typeof module !== 'undefined' && module.exports !== undefined) {
+        module.exports = recycle;
+
+    // Default
+    } else {
+        root.recycle = recycle;
+    }
 
 }(this));
