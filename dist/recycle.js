@@ -18,7 +18,6 @@ var recycle = function(arr,ret) {
 };
 
 recycle.VERSION = '0.0.1';
-root.recycle = recycle;
 
     /**
      * Expose recycle
